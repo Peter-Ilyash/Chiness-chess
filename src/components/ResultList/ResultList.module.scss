@@ -1,0 +1,13 @@
+@use '../../styles/colors' as *;
+
+.result-list {
+	position: relative;
+
+	&__item {
+		background-color: $old-lace;
+
+		&:not(:first-child) {
+			margin-top: 5px;
+		}
+	}
+}

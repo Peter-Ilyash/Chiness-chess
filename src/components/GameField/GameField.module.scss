@@ -1,0 +1,23 @@
+@use '../../styles/colors' as *;
+
+.game-field {
+	width: 300px;
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+	grid-template-rows: repeat(2, auto);
+	gap: 40px 10px;
+
+	&__table {
+		grid-column: 1 / -1;
+	}
+
+	&__cell {
+		border: 1px solid $black;
+		height: 60px;
+		padding: 0;
+	}
+
+	&__cell--hovered {
+		background-color: $navy-blue;
+	}
+}
